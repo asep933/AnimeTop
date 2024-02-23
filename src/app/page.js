@@ -1,13 +1,26 @@
-import DaftarAnime from "@/components/daftar-anime/daftarAnime";
-import Footer from "@/components/footer/footer";
-import Navbar from "@/components/navbar/navbar";
+import getData from "@/api/getDataAnime";
+import Hero from "@/components/hero";
+import Title from "@/components/title";
+import AnimeList from "@/components/recommendations";
+import Popular from "@/components/popular";
+import AllAnime from "@/components/AllAnime";
 
-export default function Home() {
+const Home = async () => {
+  const res = await getData();
+
+  const animList = await res.json();
+
   return (
     <>
-      <Navbar />
-      <DaftarAnime />
-      <Footer />
+      <Hero anime={animList} />
+      <Title judul={"Popular"} link={"All View..."} path={"popular"} />
+      <Popular />
+      <Title judul={"Recommendations"} link={"All View..."} />
+      <AnimeList />
+      <Title judul={"All"} link={"All View..."} path={"all-anime"} />
+      <AllAnime datas={animList} />
     </>
   );
-}
+};
+
+export default Home;

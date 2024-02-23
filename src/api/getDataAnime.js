@@ -1,9 +1,9 @@
 export default async function getData() {
-  const response = await fetch(
-    "https://anime-facts-rest-api.herokuapp.com/api/v1"
-  );
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_API_URL}/anime`);
 
-  if (!response.ok) throw new error("fetch data failed");
+  if (!res.ok) {
+    console.log(`error fetch`);
+  }
 
-  return response.json();
+  return res;
 }
