@@ -9,7 +9,11 @@ const Search = async ({ params }) => {
 
   //   console.log(searchAnime.data);
 
-  return <AnimeList api={searchAnime} />;
+  return (
+    <div className="pt-16">
+      <AnimeList api={searchAnime} />
+    </div>
+  );
 };
 
 export default Search;
