@@ -7,7 +7,7 @@ const AnimeList = ({ api }) => {
   const router = useRouter();
 
   return (
-    <div className="grid grid-cols-2 lg:flex lg:flex-wrap">
+    <div className="grid grid-cols-2 lg:flex lg:flex-wrap lg:justify-center">
       {api.map((data) => {
         return (
           <button

@@ -22,7 +22,7 @@ const Navbar = () => {
           <h1>AnimeTop</h1>
         </Link>
 
-        <div className="scale-75 absolute -right-3 lg:right-44">
+        <div className="scale-75 absolute -right-[17px] lg:right-44">
           <SerachInput />
         </div>
 
