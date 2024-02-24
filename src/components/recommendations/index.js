@@ -7,7 +7,7 @@ const AnimeRecomendation = async () => {
   const datas = await res.data[0].entry;
 
   return (
-    <div className="flex px-8">
+    <div className="flex lg:px-8">
       <AnimeList api={datas} />
     </div>
   );

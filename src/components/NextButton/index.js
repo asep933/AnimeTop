@@ -1,3 +1,5 @@
+import { ArrowRight } from "phosphor-react";
+
 const NextButton = ({ count, setCount }) => {
   const handleNext = () => {
     setCount(count + 1);
@@ -8,9 +10,9 @@ const NextButton = ({ count, setCount }) => {
     <>
       <button
         onClick={() => handleNext()}
-        className="p-5 bg-aksen rounded-full px-4 scale-90 lg:scale-100 bg-opacity-70"
+        className="p-4 bg-aksen rounded-full px-4 scale-75 lg:scale-100 bg-opacity-70"
       >
-        Next
+        <ArrowRight size={30} />
       </button>
     </>
   );

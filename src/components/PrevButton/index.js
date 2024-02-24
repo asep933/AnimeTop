@@ -1,3 +1,5 @@
+import { ArrowLeft } from "phosphor-react";
+
 const PrevImage = ({ count, setCount }) => {
   const handlePrev = () => {
     setCount(count - 1);
@@ -8,9 +10,9 @@ const PrevImage = ({ count, setCount }) => {
     <>
       <button
         onClick={() => handlePrev()}
-        className="p-5 bg-aksen rounded-full px-4 scale-90 lg:scale-100 bg-opacity-70"
+        className="p-4 bg-aksen rounded-full px-4 scale-75 lg:scale-100 bg-opacity-70"
       >
-        Prev
+        <ArrowLeft size={30} />
       </button>
     </>
   );

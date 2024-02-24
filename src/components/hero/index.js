@@ -1,13 +1,25 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PrevImage from "@/components/PrevButton";
 import NextImage from "@/components/NextButton";
 import Card from "../Card";
 
 const Hero = ({ anime }) => {
   const [indexImage, setIndexImage] = useState(10);
+
+  useEffect(() => {
+    try {
+      setInterval(() => {
+        setIndexImage((index) => {
+          return index > 15 ? (index = 10) : index + 1;
+        });
+      }, 3000);
+    } catch (error) {
+      console.error(error);
+    }
+  }, []);
 
   return (
     <div
@@ -22,11 +34,13 @@ const Hero = ({ anime }) => {
       </div>
 
       <Card
-        title={anime.data[indexImage].title_japanese}
+        title={anime.data[indexImage].title}
         rating={anime.data[indexImage].rating}
         score={anime.data[indexImage].score}
         rank={anime.data[indexImage].rank}
       />
+
+      <div className="hidden lg:block w-full h-screen bg-opacity-30 absolute backdrop-blur-md"></div>
 
       <Image
         className="object-top lg:object-center object-cover w-full h-auto hover:scale-110"
