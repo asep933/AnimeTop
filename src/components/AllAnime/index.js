@@ -1,19 +1,7 @@
-import Anime from "../anime";
+import AnimeList from "../AnimeList";
 
 const AllAnime = async ({ datas }) => {
-  return (
-    <div className="grid grid-cols-2 lg:flex">
-      {datas.data
-        .map((data) => {
-          return (
-            <div key={data.mal_id}>
-              <Anime image={data.images.webp.image_url} title={data.title} />
-            </div>
-          );
-        })
-        .slice(0, 5)}
-    </div>
-  );
+  return <AnimeList api={datas.data.slice(0, 5)} />;
 };
 
 export default AllAnime;

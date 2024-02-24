@@ -8,7 +8,7 @@ const PrevImage = ({ count, setCount }) => {
     <>
       <button
         onClick={() => handlePrev()}
-        className="p-5 bg-aksen rounded-full px-4 scale-90 lg:scale-100"
+        className="p-5 bg-aksen rounded-full px-4 scale-90 lg:scale-100 bg-opacity-70"
       >
         Prev
       </button>
