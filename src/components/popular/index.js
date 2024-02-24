@@ -1,5 +1,4 @@
 import AnimeList from "../AnimeList";
-import Anime from "../anime";
 import getTerpopuler from "@/api/getTerpopuler";
 
 const Popular = async () => {
