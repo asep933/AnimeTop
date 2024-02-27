@@ -36,8 +36,8 @@ const Navbar = () => {
             <Link className="hover:text-slate-200" href={"/all-anime"}>
               All
             </Link>
-            <Link className="hover:text-slate-200" href={"/bestseller"}>
-              Bestseller
+            <Link className="hover:text-slate-200" href={"/character"}>
+              Character
             </Link>
           </div>
         </div>
@@ -63,9 +63,9 @@ const Navbar = () => {
             <Link
               onClick={() => setStatus(false)}
               className="hover:text-slate-200 hover:bg-red-800 py-3"
-              href={"/bestseller"}
+              href={"/character"}
             >
-              Bestseller
+              Character
             </Link>
           </div>
         </div>

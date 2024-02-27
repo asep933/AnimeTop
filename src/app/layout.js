@@ -15,9 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`bg-latar text-white ${inter.className}`}>
-        <nav>
+        <header>
           <Navbar />
-        </nav>
+        </header>
 
         <nain>{children}</nain>
 
