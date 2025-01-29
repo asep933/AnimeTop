@@ -1,37 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# **AnimeTop**
 
-## Getting Started
+AnimeTop is a modern web application built with Next.js that showcases the latest, most popular, and oldest anime, along with the most favorite characters. The app provides users with an easy-to-navigate interface to explore anime titles and characters.
 
-First, run the development server:
+### **How to Use:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Navigate through Categories:** Explore various categories such as "Latest Anime," "Most Popular," and "Oldest Anime."
+2. **Favorite Characters:** View and explore the most popular anime characters from your favorite series.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### **Main Features:**
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Anime Listings:** Browse the latest, most popular, and oldest anime titles.
+- **Character Favorites:** Discover the most beloved characters in anime history.
+- **Responsive Design:** Optimized for mobile and desktop use.
+- **Search Functionality:** Search for anime titles or characters.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### **Technologies Used:**
 
-## Learn More
+- **Next.js:** Framework for building server-side rendered React applications.
+- **React.js:** JavaScript library for building user interfaces.
+- **CSS Modules:** Scoped and modular styling for React components.
+- **Axios:** For making API requests to fetch anime data.
+- **Jikan API (optional):** To fetch anime data from MyAnimeList.
 
-To learn more about Next.js, take a look at the following resources:
+### **Installation:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run the project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/asep933/AnimeTop.git
+    ```
 
-## Deploy on Vercel
+2. Navigate to the project directory:
+    ```bash
+    cd animetop
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# AnimeTop
+4. Create a `.env` file in the root directory and add the API key if required (for any third-party APIs):
+    ```bash
+    REACT_APP_ANIME_API_KEY=your_api_key_here
+    ```
+
+5. Run the development server:
+    ```bash
+    npm run dev
+    ```
+
+6. Open your browser and go to `http://localhost:3000` to see the website in action.
+
+### **Folder Structure:**
+
